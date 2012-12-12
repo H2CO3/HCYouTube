@@ -56,7 +56,7 @@ CFURLRef HCYouTubeCreateURLWithVideoID(CFStringRef vid)
 	}
 	
 	Class _NSJSONSerialization = objc_getClass("NSJSONSerialization");
-	parsedJSON = [_NSJSONSerialiaztion JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:0 error:NULL];
+	parsedJSON = [_NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:0 error:NULL];
 	if (parsedJSON == nil) {
 		return nil;
 	}
